@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Lab11_PNR</class>
+ <widget class="QMainWindow" name="Lab11_PNR">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>615</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Lab11_PNR</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QListWidget" name="listWidMultiset_PNR">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>141</width>
+      <height>361</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidVector_PNR">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>10</y>
+      <width>141</width>
+      <height>361</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblMultiset_PNR">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>380</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Multiset 1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblVector_PNR">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>380</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Vector 1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAdd_PNR">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>410</y>
+      <width>121</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBoxAmmountAdd_PNR">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>410</y>
+      <width>71</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBoxFromDelete_PNR">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>450</y>
+      <width>71</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnDelete_PNR">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>450</y>
+      <width>121</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Delete</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBoxAmmountDelete_PNR">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>490</y>
+      <width>71</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblAmmountAdd_PNR">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>420</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ammount</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblFromDelete_PNR">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>460</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>From</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblAmmountDelete_PNR">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>500</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ammount</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSortDecrease_PNR">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>490</y>
+      <width>121</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sort by Decrease</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioBtnMultiset_PNR">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>570</y>
+      <width>112</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Multiset</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioBtnVector_PNR">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>570</y>
+      <width>112</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Vector</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblMultisetIterValue_PNR">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>430</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblVectorIterValue_PNR">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>500</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnUnite_PNR">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>530</y>
+      <width>121</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Unite</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSortIncrease_PNR">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>530</y>
+      <width>121</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sort by Increase</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCopyAndAdd_PNR">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>530</y>
+      <width>121</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Copy &amp;&amp; Add</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidVector2_PNR">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>10</y>
+      <width>141</width>
+      <height>361</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidMultiset2_PNR">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>10</y>
+      <width>141</width>
+      <height>361</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblVector2_PNR">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>380</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Vector 2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblMultiset2_PNR">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>380</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Multiset 2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblFromFind_PNR">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>410</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>From</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblToFind_PNR">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>410</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>to</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="doubleSpinBoxFrom_PNR">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>440</y>
+      <width>67</width>
+      <height>29</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="doubleSpinBoxTo_PNR">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>440</y>
+      <width>67</width>
+      <height>29</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnFindElement_PNR">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>410</y>
+      <width>121</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Find Element</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblFoundElement_PNR">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>480</y>
+      <width>181</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Found Element:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnFindAndAdd_PNR">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>450</y>
+      <width>121</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Find &amp;&amp; Add</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblFoundElementValue_PNR">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>510</y>
+      <width>181</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnFindAndCount_PNR">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>490</y>
+      <width>121</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Find &amp;&amp; Count</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblCountOfFound_PNR">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>530</y>
+      <width>181</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Count:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblCountOfFoundValue_PNR">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>560</y>
+      <width>181</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>btnFindElement_PNR</zorder>
+   <zorder>btnDelete_PNR</zorder>
+   <zorder>listWidMultiset_PNR</zorder>
+   <zorder>listWidVector_PNR</zorder>
+   <zorder>lblMultiset_PNR</zorder>
+   <zorder>lblVector_PNR</zorder>
+   <zorder>btnAdd_PNR</zorder>
+   <zorder>spinBoxAmmountAdd_PNR</zorder>
+   <zorder>spinBoxFromDelete_PNR</zorder>
+   <zorder>spinBoxAmmountDelete_PNR</zorder>
+   <zorder>lblAmmountAdd_PNR</zorder>
+   <zorder>lblFromDelete_PNR</zorder>
+   <zorder>lblAmmountDelete_PNR</zorder>
+   <zorder>btnSortDecrease_PNR</zorder>
+   <zorder>radioBtnMultiset_PNR</zorder>
+   <zorder>radioBtnVector_PNR</zorder>
+   <zorder>lblMultisetIterValue_PNR</zorder>
+   <zorder>lblVectorIterValue_PNR</zorder>
+   <zorder>btnUnite_PNR</zorder>
+   <zorder>btnSortIncrease_PNR</zorder>
+   <zorder>btnCopyAndAdd_PNR</zorder>
+   <zorder>listWidVector2_PNR</zorder>
+   <zorder>listWidMultiset2_PNR</zorder>
+   <zorder>lblVector2_PNR</zorder>
+   <zorder>lblMultiset2_PNR</zorder>
+   <zorder>lblFromFind_PNR</zorder>
+   <zorder>lblToFind_PNR</zorder>
+   <zorder>doubleSpinBoxFrom_PNR</zorder>
+   <zorder>doubleSpinBoxTo_PNR</zorder>
+   <zorder>lblFoundElement_PNR</zorder>
+   <zorder>btnFindAndAdd_PNR</zorder>
+   <zorder>lblFoundElementValue_PNR</zorder>
+   <zorder>btnFindAndCount_PNR</zorder>
+   <zorder>lblCountOfFound_PNR</zorder>
+   <zorder>lblCountOfFoundValue_PNR</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
